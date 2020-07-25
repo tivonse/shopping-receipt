@@ -1,10 +1,10 @@
 # **shopping-receipt**
 
 ## Project Description
-This program is created to **print a receipt** for a shopping card including sales tax.
+This program is created to **print a receipt** for a shopping cart including sales tax.
 
 ### Conditions
-* **Sales tax = roundup(price * quantity * sales tax rate)**
+* Sales tax = roundup(price * quantity * sales tax rate)
 * Sales tax amount should be rounded up to the nearest 0.05 (e.g. 1.13->1.15, 1.16->1.20, 1.151->1.20)
 * Use parameters as input or read input value from file
 
@@ -23,11 +23,11 @@ CY | 9.75% | exempted | exempted
 NA | 8.875% | exempted | exempted
 
 ## Setup
-This application is developed in Maven project using plain Java without any opininated framework.<br>
+This program is developed in Maven project using plain Java without any opininated framework.<br>
 Intellij IDEA CE is used as the IDE.
 
 ## Implementation
-The program is mainly chained with three service classes
+It is mainly chained with three service classes
 * `FileInputService` : used to read the values from source
 * `TaxService` - used to calculate the amount of subtotal, tax and total
 * `ReceiptPrintingService` : used to print the result to an outputed file
