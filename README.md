@@ -32,5 +32,5 @@ The program is mainly chained with three service classes
 * `TaxService` - used to calculate the amount of subtotal, tax and total
 * `ReceiptPrintingService` : used to print the result to an outputed file
 
-### Run the application
+## Run the application
 `ShoppingReceiptApplication.java` is the main entry class and the application could be simply started by running it.
