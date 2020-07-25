@@ -22,8 +22,15 @@ Location | Sale tax rate   | Food tax rate | Clothing tax rate
 CY | 9.75% | exempted | exempted
 NA | 8.875% | exempted | exempted
 
+## Setup
+This application is developed in Maven project using plain Java without any opininated framework.<br>
+Intellij IDEA CE is used as the IDE.
+
 ## Implementation
 The program is mainly chained with three service classes
 * `FileInputService` : used to read the values from source
 * `TaxService` - used to calculate the amount of subtotal, tax and total
 * `ReceiptPrintingService` : used to print the result to an outputed file
+
+### Run the application
+`ShoppingReceiptApplication.java` is the main entry class and the application could be simply started by running it.
