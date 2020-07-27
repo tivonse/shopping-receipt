@@ -62,19 +62,17 @@ public class ReceiptPrintingService {
         bucket.padRight(
                 PaddingUtils.getColumnDefaultRightMaximumPadding()
                         + PaddingUtils.getColumnDefaultLeftMaximumPadding() * 2
-                        - tax.toString().length() - 1,
-                "tax:")
+                        - tax.toString().length() - 1, "tax:")
                 .append("$" + tax.toString())
                 .newLine();
         bucket.padRight(
                 PaddingUtils.getColumnDefaultRightMaximumPadding()
                         + PaddingUtils.getColumnDefaultLeftMaximumPadding() * 2
-                        - total.toString().length() - 1,
-                "total:")
+                        - total.toString().length() - 1, "total:")
                 .append("$" + total.toString())
                 .newLine();
 
-        return bucket.endLine();
+        return bucket.newLine();
     }
 
 }
